@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typo Tolerance</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/color/512/find-and-replace.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <section class="hero is-dark is-fullheight">
+        <div class="hero-body is-align-items-flex-start pb-0">
+            <div class="column">
+                <p class="title has-text-centered">
+                    Typo Tolerance - Levenhstein Algorithm
+                </p>
+                <p class="subtitle has-text-centered has-text-primary">
+                    with Bulma CSS
+                </p>
+
+                <div class="column is-two-fifths mx-auto">
+                    <div class="box ">
+                        <label class="label">Search</label>
+                        <div class="control">
+                            <label for="search-box"></label><input id="search-box" class="input is-primary" type="text" placeholder="Try basebell instead of baseball">
+                        </div>
+                        <span id="not-found" class="is-size-7 has-text-success-dark is-hidden">Result not found. Did you mean?</span>
+                        <aside class="menu">
+                            <ul class="menu-list">
+                                <li>
+                                    <ul id="search-lists">
+                                        <li>
+                                            <a class="has-text-link is-relative">
+                                                <span class="icon">
+                                                    <i class="fad fa-album"></i>
+                                                </span>
+                                                <span>Album</span>
+                                                <span class="has-text-weight-bold pr-3" style="position: absolute; right: 0; margin-top: 1.5px;">0</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="has-text-link is-relative">
+                                                <span class="icon">
+                                                    <i class="fad fa-baseball"></i>
+                                                </span>
+                                                <span>Baseball</span>
+                                                <span class="has-text-weight-bold pr-3" style="position: absolute; right: 0; margin-top: 1.5px;">0</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="has-text-link is-relative">
+                                                <span class="icon">
+                                                    <i class="fad fa-database"></i>
+                                                </span>
+                                                <span>Database</span>
+                                                <span class="has-text-weight-bold pr-3" style="position: absolute; right: 0; margin-top: 1.5px;">0</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="has-text-link is-relative">
+                                                <span class="icon">
+                                                    <i class="fad fa-dice"></i>
+                                                </span>
+                                                <span>Dice</span>
+                                                <span class="has-text-weight-bold pr-3" style="position: absolute; right: 0; margin-top: 1.5px;">0</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="has-text-link is-relative">
+                                                <span class="icon">
+                                                    <i class="fad fa-handshake"></i>
+                                                </span>
+                                                <span>Handshake</span>
+                                                <span class="has-text-weight-bold pr-3" style="position: absolute; right: 0; margin-top: 1.5px;">0</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="has-text-link is-relative">
+                                                <span class="icon">
+                                                    <i class="fad fa-hamburger"></i>
+                                                </span>
+                                                <span>Hamburger</span>
+                                                <span class="has-text-weight-bold pr-3" style="position: absolute; right: 0; margin-top: 1.5px;">0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-body is-align-items-flex-start is-justify-content-center pt-0">
+            <div class="column is-four-fifths">
+                <article class="message is-warning">
+                    <div class="message-header">
+                        <p>Drawback!</p>
+                    </div>
+                    <div class="message-body">
+                        The <strong>minimum tolerance</strong> is currently set to <strong>3</strong>, thus this feature is not completely efficient and right on-point. <strong>Optimization</strong> is highly needed for more accurate <a>tolerance</a> effect. 
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark pb-3 pt-2">
+        <div class="content has-text-centered">
+            <p class="has-text-light">
+                <strong class="has-text-info-light">Created</strong> by <a href="https://jgthms.com" class="has-text-info">Caesto Marco</a>.
+                All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/levenhstein.js" type="module"></script>
+</body>
+
+</html>
