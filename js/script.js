@@ -55,6 +55,7 @@ $(function ()
             if (matchingElements.length > 0 || matchingElements.length > 0 && nonMatchingElements.length > 0)
             {
                 $("#not-found").hasClass("is-hidden") ? "" : $("#not-found").addClass("is-hidden")
+                $("#no-result").hasClass("is-hidden") ? "" : $("#no-result").addClass("is-hidden")
 
                 // SORT THE ELEMENTS BY COMPARING THE DISTANCE
                 matchingElements.sort((a, b) => Distance(a) - Distance(b));
@@ -64,9 +65,10 @@ $(function ()
                     $("#search-lists").append(value);
                 })
             }
-            else
+            else if (nonMatchingElements.length > 0)
             {
                 $("#not-found").hasClass("is-hidden") ? $("#not-found").removeClass("is-hidden") : ""
+                $("#no-result").hasClass("is-hidden") ? "" : $("#no-result").addClass("is-hidden")
 
                 // SORT THE ELEMENTS BY COMPARING THE DISTANCE
                 nonMatchingElements.sort((a, b) => Distance(a) - Distance(b));
@@ -76,11 +78,17 @@ $(function ()
                     $("#search-lists").append(value);
                 })
             }
+            else
+            {
+                $("#not-found").addClass("is-hidden")
+                $("#no-result").removeClass("is-hidden")
+            }
         }
         else
         {
             $("#search-lists").html(defaultState)
             $("#not-found").addClass("is-hidden")
+            $("#no-result").addClass("is-hidden")
         }
     })
 })
