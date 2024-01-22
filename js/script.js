@@ -23,7 +23,7 @@ $(function ()
             {
                 const elementText = li.innerText.toLowerCase().replace(/[0-9]/g, '').trim();
 
-                // FIRST CHECK EACH ITEM OVERALL SIMILARITY USING contains()
+                // FIRST CHECK EACH ITEM OVERALL SIMILARITY USING includes()
                 if (elementText.includes(keyword))
                 {
                     // CHANGE TOTAL CHARACTER DIFFERENCES (DISTANCE)
