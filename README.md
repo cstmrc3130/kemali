@@ -26,5 +26,5 @@ This could be handled by comparing how many characters are mismatching in both o
 
 ## Technologies Used In Development
 - [x] [Bulma CSS](https://bulma.io)
-- [x] [JQuery](https://jquery.com/)
+- [x] [jQuery](https://jquery.com/)
 - [x] [Levenshtein.js](https://github.com/gustf/js-levenshtein)
