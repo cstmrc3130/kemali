@@ -10,7 +10,7 @@ This could be handled by comparing how many characters are mismatching in both o
 
 ### Solution
 
-- The Levenshten Algorithm will first compare the 3 leading characters i.e [A, p, p].
+- The Levenshtein Algorithm will first compare the 3 leading characters i.e [A, p, p].
   <br>
   Because there is no difference in 3 leading characters for both of the word, hence the current distance is 0.
 - Next, we can see that [l, e] and [e, l] are misplaced.
