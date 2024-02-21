@@ -17,10 +17,14 @@ This could be handled by comparing how many characters are mismatching in both o
   <br>
   The Algorithm will save the index of each characters and count how far the indexes separated each other.
   <br>
-  In short, Levenshtein will carry forward the [e] in Appel to the last index ([A, p, p, e, l] into [A, p, p, l, e]).
+  In short, Levenshtein will carry forward the [e] one step in Appel to the last index i.e ([A, p, p, e, l] into [A, p, p, l, e]).
+  <br>
+  Now the distance is 1 because there was one replacement made.
+> **1 distance** is count by doing removal, replacement and addition
 - That's it, now both of the word are identically the same (Apple and Apple).
 
-## Technologies Used In Developing
+
+## Technologies Used In Development
 - [x] [Bulma CSS](https://bulma.io)
 - [x] [JQuery](https://jquery.com/)
 - [x] [Levenshtein.js](https://github.com/gustf/js-levenshtein)
